@@ -22,7 +22,7 @@ app.get('/lgw323',(req,res)=>{
 
 app.get('/login',(req,res)=>{
     console.log('로그인 요청');
-    res.send('로그인 페이지 예시');
+    res.sendFile(__dirname+'/pages/login.html');
 })
 
 app.get('/register',(req,res)=>{
